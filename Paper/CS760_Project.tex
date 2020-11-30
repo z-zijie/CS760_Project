@@ -9,7 +9,7 @@
 \setlength{\parskip}{0.1 in}
 
 % ===== PACKAGES =====
-\usepackage{url}
+\usepackage{url, hyperref}
 \usepackage{amsmath,amssymb}
 \usepackage{color}
 \usepackage{subfigure}
@@ -81,7 +81,7 @@ Similarly, requiring Uber drivers and passengers to wear masks at all times can 
 
 There are many application scenarios such as this. If it is all supervised by manpower, the investment cost is high, and the health risks of the staff are also high.
 
-Therefore, the need for artificial intelligence to recognize the wearing of masks came into being. The main idea of this project is to construct a classifier to recognize the wearing of face masks.
+Therefore, the need for artificial intelligence to determine the wearing of masks came into being. The main idea of this project is to construct a classifier to judge whether the photo cropped from the face detector is wearing a mask.
 
 \section{Related/Similar work}
 This project is mainly inspired by \textbf{Baidu AI development platform - mask wearing detection products}.
@@ -97,6 +97,21 @@ Related/Similar work:
 \end{enumerate}
 
 \section{Dataset}
+This dataset consists of 3835 images belonging to two classes:
+\begin{itemize}
+  \item with\_mask: 1916 images
+  \item without\_mask: 1919 images
+\end{itemize}
+The images used were real images of faces wearing masks. The images were collected from the following sources:
+\begin{enumerate}
+  \item \url{https://github.com/chandrikadeb7/Face-Mask-Detection}
+  \item RMFD dataset(\url{https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset})
+  \item MAFA dataset(\url{https://www.kaggle.com/rahulmangalampalli/mafa-data})
+\end{enumerate}
+
+\section{Approach}
+
+\subsection{preprocessing}
 
 
 \end{document} 
