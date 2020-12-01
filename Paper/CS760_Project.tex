@@ -187,7 +187,7 @@ Obviously, after extracting the first 15 main features, we can still clearly dis
 \subsection{Classification algorithms}
 
 
-\subsubsection{Support Vector Machine}
+\subsubsection{Support Vector Machines}
 I chose C-Support Vector Classification(SVC) with Radial basis function kernel(RBF). Use GridSearchCV to find the optimal SVC parameters C and gamma.
 \textbf{sklearn.model\_selection.GridSearchCV} and \textbf{sklearn.svm.SVC} is used here.
 \begin{lstlisting}
@@ -209,8 +209,14 @@ SVM = SVM.fit(X_train_pca, y_train)
 print(SVM.best_estimator_)
 \end{lstlisting}
 
-\subsection{Nearest Neighbors}
+\subsubsection{Nearest Neighbors}
 For the n\_components, consider the nearest neighbor classifier.
+
+\subsubsection{Decision Trees}
+
+\subsubsection{Bayesian Learning}
+
+\subsubsection{Logistic Regression}
 
 
 \section{Results}

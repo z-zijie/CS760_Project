@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  1 DEC 2020 03:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  1 DEC 2020 03:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -476,7 +476,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<preview1.png, id=80, 526.96875pt x 485.815pt>
+<preview1.png, id=92, 526.96875pt x 485.815pt>
 File: preview1.png Graphic file (type png)
 <use preview1.png>
 Package pdftex.def Info: preview1.png  used on input line 151.
@@ -486,18 +486,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<augmentation.png, id=93, 570.13pt x 560.0925pt>
+<augmentation.png, id=105, 570.13pt x 560.0925pt>
 File: augmentation.png Graphic file (type png)
 <use augmentation.png>
 Package pdftex.def Info: augmentation.png  used on input line 157.
 (pdftex.def)             Requested size: 199.16928pt x 195.65927pt.
-<pca.png, id=94, 257.96375pt x 258.9675pt>
+<pca.png, id=106, 257.96375pt x 258.9675pt>
 File: pca.png Graphic file (type png)
 <use pca.png>
 Package pdftex.def Info: pca.png  used on input line 163.
 (pdftex.def)             Requested size: 113.81102pt x 114.25426pt.
 [3 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview1.png> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/augmentation.png>]
-<eigenfaces.png, id=101, 526.96875pt x 485.815pt>
+<eigenfaces.png, id=113, 526.96875pt x 485.815pt>
 File: eigenfaces.png Graphic file (type png)
 <use eigenfaces.png>
 Package pdftex.def Info: eigenfaces.png  used on input line 184.
@@ -509,21 +509,21 @@ Overfull \hbox (39.6686pt too wide) in paragraph at lines 191--193
 
 [4 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/pca.png> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/eigenfaces.png>] [5] (c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux)
 Package rerunfilecheck Info: File `CS760_Project.out' has not changed.
-(rerunfilecheck)             Checksum: B019528986697786BE8D3C7B2B0592AB;830.
+(rerunfilecheck)             Checksum: 3A4B9D2705AE47DD623DDFCF4075555D;1071.
  ) 
 Here is how much of TeX's memory you used:
- 10006 strings out of 479917
- 149151 string characters out of 5886664
- 630647 words of memory out of 5000000
- 26336 multiletter control sequences out of 15000+600000
+ 10012 strings out of 479917
+ 149281 string characters out of 5886664
+ 631647 words of memory out of 5000000
+ 26339 multiletter control sequences out of 15000+600000
  541537 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,5n,73p,523b,1066s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (5 pages, 898296 bytes).
+Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (5 pages, 899797 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

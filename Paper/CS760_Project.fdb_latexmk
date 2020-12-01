@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1606815730 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1606815731
-  "CS760_Project.aux" 1606815731 2386 9a80aa65305fbb9c0f181e985f3de0d6 "pdflatex"
-  "CS760_Project.out" 1606815731 830 b019528986697786be8d3c7b2b0592ab "pdflatex"
-  "CS760_Project.tex" 1606815727 7851 28b33b20529033db4b458ea39e156ac1 ""
+["pdflatex"] 1606815962 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1606815963
+  "CS760_Project.aux" 1606815963 2798 187c9ffaf29eea0f4d0c90cfaa925063 "pdflatex"
+  "CS760_Project.out" 1606815963 1071 3a4b9d2705ae47dd623ddfcf4075555d "pdflatex"
+  "CS760_Project.tex" 1606815960 7959 ab659adeb33b98e32453a68887f0d3bb ""
   "augmentation.png" 1606786071 356978 323bd3f1b6583135ccc7a924ef50f484 ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1606815731 2386 9a80aa65305fbb9c0f181e985f3de0d6 ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1606815727 7851 28b33b20529033db4b458ea39e156ac1 ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1606815963 2798 187c9ffaf29eea0f4d0c90cfaa925063 ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1606815960 7959 ab659adeb33b98e32453a68887f0d3bb ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1602977127 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1602976852 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1602977357 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -121,7 +121,7 @@
   (generated)
   "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf"
   "CS760_Project.aux"
+  "CS760_Project.out"
   "CS760_Project.pdf"
   "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.log"
   "CS760_Project.log"
-  "CS760_Project.out"
