@@ -2,4 +2,9 @@
 \BOOKMARK [1][-]{section.2}{Related/Similar work}{}% 2
 \BOOKMARK [1][-]{section.3}{Dataset}{}% 3
 \BOOKMARK [1][-]{section.4}{Approach}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{preprocessing}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Preprocessing}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Visualize the data}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Data augmentation}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Dimensionality reduction}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.5}{Classification algorithms}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Support Vector Machines}{subsection.4.5}% 10

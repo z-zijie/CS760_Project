@@ -9,7 +9,9 @@
 \setlength{\parskip}{0.1 in}
 
 % ===== PACKAGES =====
-\usepackage{url, hyperref}
+\usepackage{xcolor, graphicx, wrapfig}
+\usepackage{url, hyperref, dirtree, listings}
+\usepackage{courier, lipsum}
 \usepackage{amsmath,amssymb}
 \usepackage{color}
 \usepackage{subfigure}
@@ -22,6 +24,11 @@
   skipbelow=\topsep
 ]{siderules}
 \renewcommand{\abstractname}{}
+
+% ===== NEW COMMAND =====
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
 % ===== VARIABLES =====
 \def \R{\mathbb{R}}
@@ -108,10 +115,75 @@ The images used were real images of faces wearing masks. The images were collect
   \item RMFD dataset(\url{https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset})
   \item MAFA dataset(\url{https://www.kaggle.com/rahulmangalampalli/mafa-data})
 \end{enumerate}
+The following is the directory structure:
+\DTsetlength{0.2em}{1em}{0.2em}{1pt}{3pt}
+  \dirtree{%
+  .1 .
+  .2 dataset.
+  .3 with\_mask \ldots{} \begin{minipage}[t]{5cm}
+    1916 images{.}
+    \end{minipage}.
+  .3 without\_mask \ldots{} \begin{minipage}[t]{5cm}
+    1919 images{.}
+    \end{minipage}.
+  }
 
 \section{Approach}
 
-\subsection{preprocessing}
+\subsection{Preprocessing}
+\code{data\_dir = "../dataset"}\\
+\code{PATH = list(paths.list\_images(data\_dir))}\\
+Load images and Standardize the data\\
+The RGB channel values are in the [0, 255] range. We don’t need all the information of the three color channels, just convert the image to grayscale.
+And then, Rescale all images to the same size.\\
+\code{image = cv2.imread(img\_path, 0)}\\
+\code{image = cv2.resize(image, (img\_width, img\_height))}\\
+Next, we will standardize values to be in the [0, 1] range.\\
+\code{image = image.flatten()/255.0}\\
+So far, every image has been transformed into a vector with a length of 50176.
+This will make it more convenient to use PCA to extract the principal components.
+
+\subsection{Visualize the data}
+\begin{center}
+  \includegraphics[width=10cm]{preview1.png}
+\end{center}
+
+\subsection{Data augmentation}
+Due to the small number of training samples in this data set, overfitting generally occurs. Data augmentation takes the approach of generating additional training data from existing examples by augmenting them using random transformations that yield believable-looking images. This helps expose the model to more aspects of the data and generalize better.\\
+\begin{center}
+  \includegraphics[width=7cm]{augmentation.png}
+\end{center}
+
+
+\subsection{Dimensionality reduction}
+\begin{wrapfigure}{r}{4cm}
+\includegraphics[width=5cm]{pca.png}
+\end{wrapfigure}
+It can be seen that the picture contains many similar pixels, so referring to the idea of face recognition, we can perform appropriate dimensionality reduction processing through principal component analysis.\\
+\textit{Sklearn.decomposition.PCA} is used here.
+\begin{lstlisting}
+n_components = 15
+pca = PCA(
+  n_components=n_components,
+  svd_solver='randomized',
+  whiten=True
+).fit(X_train)
+eigenfaces = pca.components_.reshape(
+  (n_components, img_height, img_width)
+)
+X_train_pca = pca.transform(X_train)
+X_test_pca = pca.transform(X_test)
+\end{lstlisting}
+Obviously, after extracting the first 15 main features, we can still clearly distinguish whether people are wearing masks.
+
+\begin{center}
+  \includegraphics[width=10cm]{eigenfaces.png}
+\end{center}
+
+\subsection{Classification algorithms}
+
+
+\subsubsection{Support Vector Machines}
 
 
 \end{document} 
