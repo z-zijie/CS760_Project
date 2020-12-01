@@ -131,15 +131,18 @@ The following is the directory structure:
 \section{Approach}
 
 \subsection{Preprocessing}
-\code{data\_dir = "../dataset"}\\
-\code{PATH = list(paths.list\_images(data\_dir))}\\
-Load images and Standardize the data\\
-The RGB channel values are in the [0, 255] range. We don’t need all the information of the three color channels, just convert the image to grayscale.
-And then, Rescale all images to the same size.\\
-\code{image = cv2.imread(img\_path, 0)}\\
-\code{image = cv2.resize(image, (img\_width, img\_height))}\\
-Next, we will standardize values to be in the [0, 1] range.\\
-\code{image = image.flatten()/255.0}\\
+\begin{itemize}
+  \item \code{data\_dir = "../dataset"}\\
+        \code{PATH = list(paths.list\_images(data\_dir))}
+  \item Load images:\\
+        The RGB channel values are in the [0, 255] range. We don’t need all the information of the three color channels, just convert the image to grayscale.
+  \item Rescale all images to the same size.\\
+        \code{image = cv2.imread(img\_path, 0)}\\
+        \code{image = cv2.resize(image, (img\_width, img\_height))}
+  \item Standardize data:\\
+        \code{image = image.flatten()/255.0}
+\end{itemize}
+
 So far, every image has been transformed into a vector with a length of 50176.
 This will make it more convenient to use PCA to extract the principal components.
 
@@ -156,11 +159,12 @@ Due to the small number of training samples in this data set, overfitting genera
 
 
 \subsection{Dimensionality reduction}
-\begin{wrapfigure}{r}{4cm}
-\includegraphics[width=5cm]{pca.png}
-\end{wrapfigure}
+\begin{center}
+  \includegraphics[width=4cm]{pca.png}
+\end{center}
+
 It can be seen that the picture contains many similar pixels, so referring to the idea of face recognition, we can perform appropriate dimensionality reduction processing through principal component analysis.\\
-\textit{Sklearn.decomposition.PCA} is used here.
+\textbf{sklearn.decomposition.PCA} is used here.
 \begin{lstlisting}
 n_components = 15
 pca = PCA(
@@ -183,8 +187,30 @@ Obviously, after extracting the first 15 main features, we can still clearly dis
 \subsection{Classification algorithms}
 
 
-\subsubsection{Support Vector Machines}
+\subsubsection{Support Vector Machine}
+I chose C-Support Vector Classification(SVC) with Radial basis function kernel(RBF). Use GridSearchCV to find the optimal SVC parameters C and gamma.
+\textbf{sklearn.model\_selection.GridSearchCV} and \textbf{sklearn.svm.SVC} is used here.
+\begin{lstlisting}
+param_grid = {
+    'C': [1e3, 5e3, 1e4, 5e4, 1e5],
+    'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.1]
+}
+SVM = GridSearchCV(
+    SVC(kernel='rbf',
+        class_weight='balanced',
+        probability = True,
+        verbose = True
+        ),
+    param_grid,
+    verbose=10,
+    n_jobs=-1
+)
+SVM = SVM.fit(X_train_pca, y_train)
+print(SVM.best_estimator_)
+\end{lstlisting}
 
+\subsection{Nearest Neighbors}
+For the n\_components, consider the nearest neighbor classifier.
 
 \end{document} 
 
