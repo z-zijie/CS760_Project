@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1606815625 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1606815627
-  "CS760_Project.aux" 1606815627 2051 ea2c711cee1925f4abcbdab67567fdd3 "pdflatex"
-  "CS760_Project.out" 1606815627 678 f8a3d9c143335b0bff22d245d85e9db7 "pdflatex"
-  "CS760_Project.tex" 1606815624 7768 2053009deb506ffa68a21665e14a30ee ""
+["pdflatex"] 1606815730 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1606815731
+  "CS760_Project.aux" 1606815731 2386 9a80aa65305fbb9c0f181e985f3de0d6 "pdflatex"
+  "CS760_Project.out" 1606815731 830 b019528986697786be8d3c7b2b0592ab "pdflatex"
+  "CS760_Project.tex" 1606815727 7851 28b33b20529033db4b458ea39e156ac1 ""
   "augmentation.png" 1606786071 356978 323bd3f1b6583135ccc7a924ef50f484 ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1606815627 2051 ea2c711cee1925f4abcbdab67567fdd3 ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1606815624 7768 2053009deb506ffa68a21665e14a30ee ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1606815731 2386 9a80aa65305fbb9c0f181e985f3de0d6 ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1606815727 7851 28b33b20529033db4b458ea39e156ac1 ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1602977127 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1602976852 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1602977357 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -119,9 +119,9 @@
   "pca.png" 1606787549 6195 8141ae37d14b501800658e1a0c1d409c ""
   "preview1.png" 1606785681 150613 7637472ea418460e04a2960fcc12090b ""
   (generated)
-  "CS760_Project.log"
-  "CS760_Project.aux"
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.log"
-  "CS760_Project.out"
   "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf"
+  "CS760_Project.aux"
   "CS760_Project.pdf"
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.log"
+  "CS760_Project.log"
+  "CS760_Project.out"
