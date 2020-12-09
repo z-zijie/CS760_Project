@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  9 DEC 2020 00:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  9 DEC 2020 02:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,25 +462,94 @@ LaTeX Info: Redefining \nameref on input line 69.
 \openout3 = `CS760_Project.out'.
 
 \c@lstlisting=\count306
- [1
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux)
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 123.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 136--136
+[][] 
+ []
+
+<preview.png, id=81, 1777.64125pt x 252.945pt>
+File: preview.png Graphic file (type png)
+<use preview.png>
+Package pdftex.def Info: preview.png  used on input line 159.
+(pdftex.def)             Requested size: 426.79134pt x 60.72733pt.
+[2 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png>]
+<structure1.JPG, id=106, 177.66376pt x 273.4215pt>
+File: structure1.JPG Graphic file (type jpg)
+<use structure1.JPG>
+Package pdftex.def Info: structure1.JPG  used on input line 181.
+(pdftex.def)             Requested size: 113.81102pt x 175.15602pt.
+
+Overfull \hbox (1.06725pt too wide) in paragraph at lines 181--182
+[][] 
+ []
+
+<structure2.JPG, id=107, 418.56375pt x 523.9575pt>
+File: structure2.JPG Graphic file (type jpg)
+<use structure2.JPG>
+Package pdftex.def Info: structure2.JPG  used on input line 184.
+(pdftex.def)             Requested size: 113.81102pt x 142.46178pt.
+
+Overfull \hbox (1.06725pt too wide) in paragraph at lines 184--185
+[][] 
+ []
+
+<structure4.JPG, id=108, 315.579pt x 523.35526pt>
+File: structure4.JPG Graphic file (type jpg)
+<use structure4.JPG>
+Package pdftex.def Info: structure4.JPG  used on input line 187.
+(pdftex.def)             Requested size: 113.81102pt x 188.74313pt.
+
+Overfull \hbox (1.06725pt too wide) in paragraph at lines 187--188
+[][] 
+ []
+
+<structure3.JPG, id=109, 472.76625pt x 504.08325pt>
+File: structure3.JPG Graphic file (type jpg)
+<use structure3.JPG>
+Package pdftex.def Info: structure3.JPG  used on input line 190.
+(pdftex.def)             Requested size: 113.81102pt x 121.35164pt.
+
+Overfull \hbox (1.06725pt too wide) in paragraph at lines 190--191
+[][] 
+ []
+
+[3 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure2.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure4.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure3.JPG>] [4] (c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux)
 Package rerunfilecheck Info: File `CS760_Project.out' has not changed.
-(rerunfilecheck)             Checksum: C3EBF2D7D540B3C25BC53DB4542A59D7;144.
+(rerunfilecheck)             Checksum: 6C502005DA384743B5DFA2E4CA7D06BA;916.
  ) 
 Here is how much of TeX's memory you used:
- 9572 strings out of 479917
- 144824 string characters out of 5886664
- 580647 words of memory out of 5000000
- 25979 multiletter control sequences out of 15000+600000
- 537216 words of font info for 36 fonts, out of 8000000 for 9000
+ 10046 strings out of 479917
+ 149709 string characters out of 5886664
+ 710647 words of memory out of 5000000
+ 26357 multiletter control sequences out of 15000+600000
+ 541202 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,5n,73p,523b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (1 page, 83490 bytes).
+ 66i,9n,73p,523b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (4 pages, 1256664 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
