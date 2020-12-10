@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1607561084 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1607561116
-  "CS760_Project.aux" 1607561085 2716 76565c1b1ca22d2889dc32465373ce04 "pdflatex"
-  "CS760_Project.out" 1607561085 989 7b30e032827a41626e278961fce50154 "pdflatex"
-  "CS760_Project.tex" 1607561115 15596 d4ce56518d5a4ea812230fafdb1a54ec ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1607561085 2716 76565c1b1ca22d2889dc32465373ce04 ""
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1607561115 15596 d4ce56518d5a4ea812230fafdb1a54ec ""
+["pdflatex"] 1607583980 "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf" "CS760_Project" 1607583981
+  "CS760_Project.aux" 1607583981 2716 e7eb447f57ecb31114c337cbeda02bb4 "pdflatex"
+  "CS760_Project.out" 1607583981 989 7b30e032827a41626e278961fce50154 "pdflatex"
+  "CS760_Project.tex" 1607583979 13343 e704ea790bdc1cad6d85e1b16f169edd ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux" 1607583981 2716 e7eb447f57ecb31114c337cbeda02bb4 ""
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.tex" 1607583979 13343 e704ea790bdc1cad6d85e1b16f169edd ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1602977127 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1602977357 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1602976964 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -120,8 +120,8 @@
   "structure4.JPG" 1607502925 42027 aceb17ddd0f088a533d609ced1c2f581 ""
   (generated)
   "CS760_Project.pdf"
-  "CS760_Project.out"
-  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.log"
   "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf"
   "CS760_Project.log"
+  "c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.log"
   "CS760_Project.aux"
+  "CS760_Project.out"

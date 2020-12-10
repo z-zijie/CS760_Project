@@ -574,8 +574,6 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -598,10 +596,15 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png
@@ -609,9 +612,6 @@ INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG
 INPUT c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG

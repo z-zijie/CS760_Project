@@ -91,17 +91,17 @@ There are many application scenarios such as this. If it is all supervised by ma
 Therefore, the need for artificial intelligence to determine the wearing of masks came into being. The main idea of this project is to construct a classifier to judge whether the photo cropped from the face detector is wearing a mask.
 
 \section{Related/Similar work}
-% This project is mainly inspired by \textbf{Baidu AI development platform - mask wearing detection products}.
+This project is mainly inspired by \textbf{Baidu AI development platform - mask wearing detection products}.
 
-% \url{https://ai.baidu.com/tech/body/driver}
+\url{https://ai.baidu.com/tech/body/driver}
 
 
-% Related/Similar work:
-% \begin{enumerate}
-%   \item \url{https://github.com/AIZOOTech/FaceMaskDetection}
-%   \item \url{https://github.com/chandrikadeb7/Face-Mask-Detection}
-%   \item \url{https://arxiv.org/abs/2003.09093}
-% \end{enumerate}
+Related/Similar work:
+\begin{enumerate}
+  \item \url{https://github.com/AIZOOTech/FaceMaskDetection}
+  \item \url{https://github.com/chandrikadeb7/Face-Mask-Detection}
+  \item \url{https://arxiv.org/abs/2003.09093}
+\end{enumerate}
 
 \section{Dataset}
 
@@ -233,10 +233,11 @@ Therefore, the need for artificial intelligence to determine the wearing of mask
   After generating a hundred decision trees like this, for a new image after preprocessing, every decision tree will give a prediction. Choose the class with the most votes as the predicted value of the new image.
 
   \subsection{Packages}
-  \begin{enumerate}
-    \item pytorch
-    \item sklearn
-  \end{enumerate}
+    (1) pytorch
+    (2) sklearn
+    (3) PIL
+    (4) numpy
+    (5) opencv
 
 \section{Results}
 
@@ -250,7 +251,7 @@ Therefore, the need for artificial intelligence to determine the wearing of mask
             \item Accuracy of without\_mask : 91 \%.
           \end{enumerate}
     \item \textbf{Nearest Neighbors}:\begin{lstlisting}
-      [ Nearest Neighbors ]
+[ Nearest Neighbors ]
       classification report on the test set
       done in 22.212s
                     precision    recall  f1-score   support
@@ -263,7 +264,7 @@ Therefore, the need for artificial intelligence to determine the wearing of mask
      weighted avg       0.87      0.86      0.85       680
     \end{lstlisting}
     \item \textbf{Random Forest}:\begin{lstlisting}
-      [ Random Forest ]
+[ Random Forest ]
       classification report on the test set
       done in 0.061s
                     precision    recall  f1-score   support
@@ -278,140 +279,38 @@ Therefore, the need for artificial intelligence to determine the wearing of mask
 
   \end{enumerate}
   \subsection{Comparisons}
+  \textbf{Training time:}
 
+  The neural network model executed 15 epochs, with a long training time and many parameters. In comparison, the nearest neighbor algorithm has almost no training time. The training time of random forest algorithm is moderate.
+
+  \textbf{Performance:}
+
+  Although the kd\_tree algorithm is used, the performance of the nearest neighbor algorithm is still very bad, which is determined by its principle. The larger the data set, the greater the computational overhead.
+
+  The performance of neural networks and random forests is very good. The scale of the neural network is determined before training, and the depth of each decision tree in the random forest is not very large, so the results can be quickly obtained.
+
+  \textbf{Generalization:}
+  The neural network model has many parameters and is very complex. For the problem of mask recognition, if there is no overfitting, its generalization ability is very strong.
+
+  However, for traditional machine learning algorithms, the model complexity of k-nearest neighbors is not high, and it is difficult to effectively learn the laws behind the data.
+
+  For the random forest algorithm, it is an embedded algorithm. The data space of each decision tree is different, so that the underlying laws of the data can be learned from multiple angles.
+  
+  In the ideal situation where the classification strength of a single decision tree is as high as possible and the correlation between decision trees is as small as possible, the random forest algorithm has strong generalization ability.
   \subsection{Results}
+  In general, for the image classification problem, the neural network model has great advantages in accuracy and generalization ability.
 
+  The K-nearest neighbor algorithm is worth studying in terms of metric selection. Its performance is weak and may perform better in a small sample space.
+
+  The performance of the random forest algorithm is close to neural network. The process of using information entropy to select features to generate a decision tree is very efficient.
 
 \section{Conclusions and Future Work}
+
 
 \section{References}
 
 
 \end{document} 
-% This dataset consists of 3835 images belonging to two classes:
-% \begin{itemize}
-%   \item with\_mask: 1916 images
-%   \item without\_mask: 1919 images
-% \end{itemize}
-% The images used were real images of faces wearing masks. The images were collected from the following sources:
-% \begin{enumerate}
-%   \item \url{https://github.com/chandrikadeb7/Face-Mask-Detection}
-%   \item RMFD dataset(\url{https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset})
-%   \item MAFA dataset(\url{https://www.kaggle.com/rahulmangalampalli/mafa-data})
-% \end{enumerate}
-% The following is the directory structure:
-% \DTsetlength{0.2em}{1em}{0.2em}{1pt}{3pt}
-%   \dirtree{%
-%   .1 .
-%   .2 dataset.
-%   .3 with\_mask \ldots{} \begin{minipage}[t]{5cm}
-%     1916 images{.}
-%     \end{minipage}.
-%   .3 without\_mask \ldots{} \begin{minipage}[t]{5cm}
-%     1919 images{.}
-%     \end{minipage}.
-%   }
-
-% \section{Approach}
-
-% \subsection{Preprocessing}
-% \begin{itemize}
-%   \item \code{data\_dir = "../dataset"}\\
-%         \code{PATH = list(paths.list\_images(data\_dir))}
-%   \item Load images:\\
-%         The RGB channel values are in the [0, 255] range. We don’t need all the information of the three color channels, just convert the image to grayscale.
-%   \item Rescale all images to the same size.\\
-%         \code{image = cv2.imread(img\_path, 0)}\\
-%         \code{image = cv2.resize(image, (img\_width, img\_height))}
-%   \item Standardize data:\\
-%         \code{image = image.flatten()/255.0}
-% \end{itemize}
-
-% So far, every image has been transformed into a vector with a length of 50176.
-% This will make it more convenient to use PCA to extract the principal components.
-
-% \subsection{Visualize the data}
-% \begin{center}
-%   \includegraphics[width=10cm]{preview1.png}
-% \end{center}
-
-% \subsection{Data augmentation}
-% Due to the small number of training samples in this data set, overfitting generally occurs. Data augmentation takes the approach of generating additional training data from existing examples by augmenting them using random transformations that yield believable-looking images. This helps expose the model to more aspects of the data and generalize better.\\
-% \begin{center}
-%   \includegraphics[width=7cm]{augmentation.png}
-% \end{center}
-
-
-% \subsection{Dimensionality reduction}
-% \begin{center}
-%   \includegraphics[width=4cm]{pca.png}
-% \end{center}
-
-% It can be seen that the picture contains many similar pixels, so referring to the idea of face recognition, we can perform appropriate dimensionality reduction processing through principal component analysis.\\
-% \textbf{sklearn.decomposition.PCA} is used here.
-% \begin{lstlisting}
-% n_components = 15
-% pca = PCA(
-%   n_components=n_components,
-%   svd_solver='randomized',
-%   whiten=True
-% ).fit(X_train)
-% eigenfaces = pca.components_.reshape(
-%   (n_components, img_height, img_width)
-% )
-% X_train_pca = pca.transform(X_train)
-% X_test_pca = pca.transform(X_test)
-% \end{lstlisting}
-% Obviously, after extracting the first 15 main features, we can still clearly distinguish whether people are wearing masks.
-
-% \begin{center}
-%   \includegraphics[width=10cm]{eigenfaces.png}
-% \end{center}
-
-% \subsection{Classification algorithms}
-
-
-% \subsubsection{Support Vector Machines}
-% I chose C-Support Vector Classification(SVC) with Radial basis function kernel(RBF). Use GridSearchCV to find the optimal SVC parameters C and gamma.
-% \textbf{sklearn.model\_selection.GridSearchCV} and \textbf{sklearn.svm.SVC} is used here.
-% \begin{lstlisting}
-% param_grid = {
-%     'C': [1e3, 5e3, 1e4, 5e4, 1e5],
-%     'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.1]
-% }
-% SVM = GridSearchCV(
-%     SVC(kernel='rbf',
-%         class_weight='balanced',
-%         probability = True,
-%         verbose = True
-%         ),
-%     param_grid,
-%     verbose=10,
-%     n_jobs=-1
-% )
-% SVM = SVM.fit(X_train_pca, y_train)
-% print(SVM.best_estimator_)
-% \end{lstlisting}
-
-% \subsubsection{Nearest Neighbors}
-% For the n\_components, consider the nearest neighbor classifier.
-
-% \subsubsection{Decision Trees}
-
-% \subsubsection{Bayesian Learning}
-
-% \subsubsection{Logistic Regression}
-
-
-% \section{Results}
-
-
-% \section{Conclusions and Future Work}
-
-
-% \section{References}
-
-% \end{document} 
 
 
 

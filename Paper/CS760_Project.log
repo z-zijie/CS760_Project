@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  9 DEC 2020 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.17)  10 DEC 2020 01:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,15 +462,15 @@ LaTeX Info: Redefining \nameref on input line 69.
 \openout3 = `CS760_Project.out'.
 
 \c@lstlisting=\count306
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 112.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 96.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -487,13 +487,13 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 136--136
 [][] 
  []
 
-<preview.png, id=85, 1777.64125pt x 252.945pt>
+[2]
+<preview.png, id=111, 1777.64125pt x 252.945pt>
 File: preview.png Graphic file (type png)
 <use preview.png>
 Package pdftex.def Info: preview.png  used on input line 159.
 (pdftex.def)             Requested size: 426.79134pt x 60.72733pt.
-[2 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png>]
-<structure1.JPG, id=110, 177.66376pt x 273.4215pt>
+<structure1.JPG, id=113, 177.66376pt x 273.4215pt>
 File: structure1.JPG Graphic file (type jpg)
 <use structure1.JPG>
 Package pdftex.def Info: structure1.JPG  used on input line 181.
@@ -503,7 +503,7 @@ Overfull \hbox (1.06725pt too wide) in paragraph at lines 181--182
 [][] 
  []
 
-<structure2.JPG, id=111, 418.56375pt x 523.9575pt>
+<structure2.JPG, id=114, 418.56375pt x 523.9575pt>
 File: structure2.JPG Graphic file (type jpg)
 <use structure2.JPG>
 Package pdftex.def Info: structure2.JPG  used on input line 184.
@@ -513,7 +513,7 @@ Overfull \hbox (1.06725pt too wide) in paragraph at lines 184--185
 [][] 
  []
 
-<structure4.JPG, id=112, 315.579pt x 523.35526pt>
+<structure4.JPG, id=115, 315.579pt x 523.35526pt>
 File: structure4.JPG Graphic file (type jpg)
 <use structure4.JPG>
 Package pdftex.def Info: structure4.JPG  used on input line 187.
@@ -523,7 +523,7 @@ Overfull \hbox (1.06725pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
-<structure3.JPG, id=113, 472.76625pt x 504.08325pt>
+<structure3.JPG, id=116, 472.76625pt x 504.08325pt>
 File: structure3.JPG Graphic file (type jpg)
 <use structure3.JPG>
 Package pdftex.def Info: structure3.JPG  used on input line 190.
@@ -533,23 +533,23 @@ Overfull \hbox (1.06725pt too wide) in paragraph at lines 190--191
 [][] 
  []
 
-[3 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure2.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure4.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure3.JPG>] [4] [5] (c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux)
+[3 <c:/Users/ZIJIE/Documents/CS760_Project/Paper/preview.png> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure1.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure2.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure4.JPG> <c:/Users/ZIJIE/Documents/CS760_Project/Paper/structure3.JPG>] [4] [5] [6] (c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.aux)
 Package rerunfilecheck Info: File `CS760_Project.out' has not changed.
 (rerunfilecheck)             Checksum: 7B30E032827A41626E278961FCE50154;989.
  ) 
 Here is how much of TeX's memory you used:
- 10083 strings out of 479917
- 150166 string characters out of 5886664
- 710647 words of memory out of 5000000
+ 10085 strings out of 479917
+ 150179 string characters out of 5886664
+ 693647 words of memory out of 5000000
  26358 multiletter control sequences out of 15000+600000
  541202 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,9n,73p,523b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,9n,73p,523b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (5 pages, 1260622 bytes).
+Output written on c:/Users/ZIJIE/Documents/CS760_Project/Paper/CS760_Project.pdf (6 pages, 1264990 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 108 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
