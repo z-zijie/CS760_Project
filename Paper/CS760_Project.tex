@@ -217,15 +217,66 @@ Therefore, the need for artificial intelligence to determine the wearing of mask
 
   \subsection{Nearest Neighbors Algorithm}
   Considering the use of K-NN algorithm to achieve face recognition, we can try to use K-NN for mask wearing recognition.
-  
+
+  Based on the previous preprocessing, flatten each Tensor into a 1-dimension vector.
+
+  Choose algorithm = 'kd\_tree' to speed up. Implement with parameters:\begin{lstlisting}
+    n_neighbors = 15, weight = 'distance', metric='euclidean'
+  \end{lstlisting}
+  For a new image after preprocessing, we will gave a point in the 32400-dimension vector space. Calculate the Euclidean distance from this point to every known point. The predicted value of this unknown point is obtained by weighted voting of the 15 known points closest to it.
+
+  \subsection{Random Forest Algorithm}
+  As we all know, decision trees can be very sensitive to the specific data we observe. In fact, they can be quite biased, and tend to overfit.
+
+  After randomly slicing the original data set, generate a decision tree on each data set after the split. Use information entropy as the criterion for selecting nodes.
+
+  After generating a hundred decision trees like this, for a new image after preprocessing, every decision tree will give a prediction. Choose the class with the most votes as the predicted value of the new image.
 
   \subsection{Packages}
-
+  \begin{enumerate}
+    \item pytorch
+    \item sklearn
+  \end{enumerate}
 
 \section{Results}
 
   \subsection{Description of experiments}
+  For the above three methods, after randomly slicing the original data set at a ratio of 0.2, train on the training set to obtain accuracy on the test set.
+  \begin{enumerate}
+    \item \textbf{Neural Networks}:
+          \begin{enumerate}
+            \item Accuracy of the network on the test images: 92 \%.
+            \item Accuracy of with\_mask : 95 \%.
+            \item Accuracy of without\_mask : 91 \%.
+          \end{enumerate}
+    \item \textbf{Nearest Neighbors}:\begin{lstlisting}
+      [ Nearest Neighbors ]
+      classification report on the test set
+      done in 22.212s
+                    precision    recall  f1-score   support
 
+                0       0.92      0.73      0.81       294
+                1       0.82      0.95      0.88       386
+
+         accuracy                           0.86       680
+        macro avg       0.87      0.84      0.85       680
+     weighted avg       0.87      0.86      0.85       680
+    \end{lstlisting}
+    \item \textbf{Random Forest}:\begin{lstlisting}
+      [ Random Forest ]
+      classification report on the test set
+      done in 0.061s
+                    precision    recall  f1-score   support
+
+                0       0.92      0.84      0.88       294
+                1       0.88      0.95      0.91       386
+
+         accuracy                           0.90       680
+        macro avg       0.90      0.89      0.90       680
+     weighted avg       0.90      0.90      0.90       680
+    \end{lstlisting}
+
+  \end{enumerate}
   \subsection{Comparisons}
 
   \subsection{Results}
