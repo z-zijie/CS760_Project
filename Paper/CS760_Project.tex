@@ -9,7 +9,7 @@
 \setlength{\parskip}{0.1 in}
 
 % ===== PACKAGES =====
-\usepackage{xcolor, graphicx, wrapfig}
+\usepackage{xcolor, graphicx, wrapfig, svg}
 \usepackage{url, hyperref, dirtree, listings}
 \usepackage{courier, lipsum}
 \usepackage{amsmath,amssymb}
@@ -74,7 +74,11 @@
 \end{center}
 
 \begin{abstract}
-Write your abstract here
+  In this project, Neural Network, Random-Forest and K-nearest neighbor algorithms were implemented to perform the task of mask detection. Use convolutional neural network(CNN) to extract features of images, and then use fully connected(FC) network for classification. After 100 epochs, the accuracy on the test set reached 96\%. The classifier obtained in this project can perform real-time prediction in images, video clips, and network video streams.
+
+\begin{center}
+  SOURCE CODE:\url{https://github.com/z-zijie/CS760_Project}
+\end{center}
 \end{abstract}
 
 \section{Introduction}
@@ -100,7 +104,11 @@ Related/Similar work:
 \begin{enumerate}
   \item \url{https://github.com/AIZOOTech/FaceMaskDetection}
   \item \url{https://github.com/chandrikadeb7/Face-Mask-Detection}
-  \item \url{https://arxiv.org/abs/2003.09093}
+  \item \url{https://arxiv.org/abs/2003.09093}\cite{wang2020masked}
+  \item \url{https://arxiv.org/abs/2005.03950}\cite{jiang2020retinamask}
+  \item \url{https://www.sciencedirect.com/science/article/pii/S0263224120308289}\cite{LOEY2021108288}
+  \item \url{https://www.sciencedirect.com/science/article/pii/S2210670720308179}\cite{LOEY2020102600}
+  \item \url{https://ieeexplore.ieee.org/document/8902391}\cite{8902391}
 \end{enumerate}
 
 \section{Dataset}
@@ -112,6 +120,7 @@ Related/Similar work:
           \url{https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset}
     \item \textbf{CASIA-WebFace-Dataset}
   \end{enumerate}
+  The data set can be downloaded here \url{https://github.com/z-zijie/CS760_Project/tree/main/dataset}
   \subsection{Description}
   \begin{enumerate}
     \item The dataset contains 3400 images, which belong to two categories:
@@ -176,25 +185,32 @@ Related/Similar work:
   Generally, Convolutional Neural Networks (CNN) are complex feed forward neural networks. CNNs are used for image classification and recognition because of its high accuracy.
 
   So the first method is Neural Networks.
+  % \begin{figure}[!htbp]
+  % \minipage{0.24\textwidth}
+  %   \includegraphics[width=4cm]{structure1.JPG}
+  % \endminipage\hfill
+  % \minipage{0.24\textwidth}
+  %   \includegraphics[width=4cm]{structure2.JPG}
+  % \endminipage\hfill
+  % \minipage{0.24\textwidth}
+  %   \includegraphics[width=4cm]{structure4.JPG}
+  % \endminipage\hfill
+  % \minipage{0.24\textwidth}
+  %   \includegraphics[width=4cm]{structure3.JPG}
+  % \endminipage
+  % \end{figure}
+
   \begin{figure}[!htbp]
-    \minipage{0.24\textwidth}
-      \includegraphics[width=4cm]{structure1.JPG}
-    \endminipage\hfill
-    \minipage{0.24\textwidth}
-      \includegraphics[width=4cm]{structure2.JPG}
-    \endminipage\hfill
-    \minipage{0.24\textwidth}
-      \includegraphics[width=4cm]{structure4.JPG}
-    \endminipage\hfill
-    \minipage{0.24\textwidth}
-      \includegraphics[width=4cm]{structure3.JPG}
-    \endminipage
-    \end{figure}
+    \centering
+    \includegraphics[width=12cm]{NN.pdf}
+    \caption{Structure}
+  \end{figure}
   \begin{enumerate}
     \item The main structure of the neural network consists of two parts: Feature learning and classifier.
     \item The first part includes two \textbf{Conv2d} layer.
     \item The second part is a Full-Connected Network.
   \end{enumerate}
+  
   \begin{lstlisting}
   Net(
     (features): Sequential(
@@ -245,10 +261,17 @@ Related/Similar work:
   For the above three methods, after randomly slicing the original data set at a ratio of 0.2, train on the training set to obtain accuracy on the test set.
   \begin{enumerate}
     \item \textbf{Neural Networks}:
+          \begin{figure}[!htbp]
+            \centering
+            \includegraphics[width=17cm]{trainingloss.eps}
+            \caption{Training Loss}
+          \end{figure}
+          It can be seen that this training loss is gradually converging.
+          After 100 epoch training, the model converges with high accuracy.
           \begin{enumerate}
-            \item Accuracy of the network on the test images: 92 \%.
-            \item Accuracy of with\_mask : 95 \%.
-            \item Accuracy of without\_mask : 91 \%.
+            \item Accuracy of the network on the test images: 96 \%.
+            \item Accuracy of with\_mask : 100 \%.
+            \item Accuracy of without\_mask : 97 \%.
           \end{enumerate}
     \item \textbf{Nearest Neighbors}:\begin{lstlisting}
 [ Nearest Neighbors ]
@@ -305,10 +328,18 @@ Related/Similar work:
   The performance of the random forest algorithm is close to neural network. The process of using information entropy to select features to generate a decision tree is very efficient.
 
 \section{Conclusions and Future Work}
+In conclusion, the neural network method performs best on the image classification problem.
 
+The classifier in this article can process either a single image or a video clip and video stream.
 
-\section{References}
+\textbf{Future Work:}
+With object detection algorithms such as YOLO, real-time tracking of human faces and judgment of mask wearing can be realized. In actual operation, I used OpenCV's DNN network to realize real-time face detection. The results of this article can already be applied to actual usage scenarios.
 
+A further question is whether it is possible to realize face recognition while wearing a mask, such as the iPhone's FaceID unlocking problem. In this direction, I believe there are a wide range of application scenarios.
+
+% \section{References}
+\bibliographystyle{unsrt}
+\bibliography{S0263224120308289}
 
 \end{document} 
 

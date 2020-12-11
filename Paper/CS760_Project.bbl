@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{wang2020masked}
+Zhongyuan Wang, Guangcheng Wang, Baojin Huang, Zhangyang Xiong, Qi~Hong, Hao
+  Wu, Peng Yi, Kui Jiang, Nanxi Wang, Yingjiao Pei, Heling Chen, Yu~Miao,
+  Zhibing Huang, and Jinbi Liang.
+\newblock Masked face recognition dataset and application, 2020.
+
+\bibitem{jiang2020retinamask}
+Mingjie Jiang, Xinqi Fan, and Hong Yan.
+\newblock Retinamask: A face mask detector, 2020.
+
+\bibitem{LOEY2021108288}
+Mohamed Loey, Gunasekaran Manogaran, Mohamed Hamed~N. Taha, and Nour Eldeen~M.
+  Khalifa.
+\newblock A hybrid deep transfer learning model with machine learning methods
+  for face mask detection in the era of the covid-19 pandemic.
+\newblock {\em Measurement}, 167:108288, 2021.
+
+\bibitem{LOEY2020102600}
+Mohamed Loey, Gunasekaran Manogaran, Mohamed Hamed~N. Taha, and Nour Eldeen~M.
+  Khalifa.
+\newblock Fighting against covid-19: A novel deep learning model based on
+  yolo-v2 with resnet-50 for medical face mask detection.
+\newblock {\em Sustainable Cities and Society}, page 102600, 2020.
+
+\bibitem{8902391}
+M.~{Barthakur} and K.~K. {Sarma}.
+\newblock Semantic segmentation using k-means clustering and deep learning in
+  satellite image.
+\newblock In {\em 2019 2nd International Conference on Innovations in
+  Electronics, Signal Processing and Communication (IESC)}, pages 192--196,
+  March 2019.
+
+\end{thebibliography}
