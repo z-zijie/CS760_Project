@@ -80,7 +80,7 @@ done in 22.212s
    macro avg       0.87      0.84      0.85       680
 weighted avg       0.87      0.86      0.85       680
 
-[ Neural Net
+[ Neural Net ]
 Accuracy of the network on the test images: 96 %
 Accuracy of with_mask : 100 %
 Accuracy of without_mask : 97 %
